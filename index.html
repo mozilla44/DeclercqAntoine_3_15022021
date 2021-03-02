@@ -10,78 +10,82 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <title>Ohmyfood</title>
 </head>
-
 
 <body>
     <div class="container">
         <header>
             <img src="images/logo/ohmyfood@2x.svg">
-        </header>
-
-        <section class="header__location">
-            <!-- icon -->
-            <p>Paris, Belleville</p>
-        </section>
-
-        <main>
-            <section class="discover">
+            <div class="header__location">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Paris, Belleville</p>
+            </div>
+            <div class="discover">
                 <h1>Reservez le menu qui vous convient</h1>
-                <h2>Découvrez des restaurants d'exception,séléctionnés par nos soins</h2>
-                <button class="explore">Explorer nos restaurants</button>
-            </section>
+                <p>Découvrez des restaurants d'exception,séléctionnés par nos soins</p>
+                <button class="discover__btn">Explorer nos restaurants</button>
+            </div>
+        </header>
+        
+        <main>
 
-            <section class="operation-mode">
-                <div class="operation-mode-btn">
+            <section class="howitworks">
+                <h2>Fonctionnement</h2>
+                <div class="howitworks__btn">
                     <!-- icon n°1 -->
-                    <!-- icon phone -->
-                    <h3>Choisissez un restaurant</h3>
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Choisissez un restaurant</p>
                 </div>
-                <div class="operation-mode-btn">
+                <div class="howitworks__btn">
                     <!-- icon n°2 -->
-                    <!-- icon menu -->
-                    <h3>Comosez votre menu</h3>
+                    <i class="fas fa-list-ul"></i>
+                    <p>Composez votre menu</p>
                 </div>
-                <div class="operation-mode-btn">
+                <div class="howitworks__btn">
                     <!-- icon n°3 -->
-                    <!-- icon shop -->
-                    <h3>Dégustez au restaurant</h3>
+                    <i class="fas fa-store"></i>
+                    <p>Dégustez au restaurant</p>
                 </div>
             </section>
 
-            <section class="restaurants">
-                <h3>Restaurants</h3>
-                <figure class="restaurants__figure__new">
+            <section class="restos">
+                <h2>Restaurants</h2>
+                <figure class="restos__figure--new">
                     <img src="images/restaurants/palette.jpg">
-                    <!-- new icon -->
-                    <figcaption class="restaurants__figcaption">
+                    <div class="new">
+                        <p class="new">Nouveau</p>
+                    </div>
+                    <figcaption class="restos__figcaption">
                         <h3>La palette du goût</h3>
                         <p>Ménilmontant</p>
-                        <!-- icon heart -->
+                        <i class="far fa-heart"></i>
                     </figcaption>
                 </figure>
-                <figure class="restaurants__figure__new">
+                <figure class="restos__figure--new">
                     <img src="images/restaurants/note.jpg">
-                    <!-- icon new -->
+                    <div class="new">
+                        <p class="new">Nouveau</p>
+                    </div>
                     <figcaption>
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>
-                        <!-- icon heart -->
+                        <i class="far fa-heart"></i>
                     </figcaption>
                 </figure>
-                <figure class="restaurants__figure">
+                <figure class="restos__figure">
                     <img src="images/restaurants/francaise.jpg">
                     <h3>À la française</h3>
                     <p>Cité Rouge</p>
-                    <!-- icon heart -->
+                    <i class="far fa-heart"></i>
                 </figure>
-                <figure class="restaurant__figure">
+                <figure class="restos__figure">
                     <img src="images/restaurants/delice.jpg">
                     <figcaption>
                         <h3>Le délice des sens</h3>
                         <p>Folie-Méricourt</p>
-                        <!-- icon heart -->
+                        <i class="far fa-heart"></i>
                     </figcaption>
                 </figure>
             </section>
@@ -90,11 +94,11 @@
         <footer>
             <p>ohmyfood</p>
             <div class="propose">
-                <!-- icon fork -->
+                <i class="fas fa-utensils"></i>
                 <p>proposer un restaurant</p>
             </div>
             <div class="partner">
-                <!-- icon partner -->
+                <i class="fas fa-hands-helping"></i>
                 <p>Devenir partenaire</p>
             </div>
             <div class="legal">
@@ -107,6 +111,7 @@
     </div>
 </body>
 
-
-
 </html>
+
+
+bo
