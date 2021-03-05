@@ -95,6 +95,12 @@ header {
         -webkit-box-shadow: 0px 3px 5px 1px rgba(207, 199, 207, 1);
         -moz-box-shadow: 0px 3px 5px 1px rgba(207, 199, 207, 1);
         box-shadow: 0px 3px 5px 1px rgba(207, 199, 207, 1);
+        i {
+            font-size: 20px;
+            color: grey;
+            margin-left: 1em;
+            margin-right: 1.5em;
+        }
         .nbr-circle {
             background-color: $color-primary;
             border-radius: 15px;
