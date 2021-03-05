@@ -8,23 +8,26 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">    
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <title>Ohmyfood</title>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <img src="images/logo/ohmyfood@2x.svg">
+            <div class="logo-banner">
+                <img src="images/logo/ohmyfood@2x.svg" alt="logo de Ohmyfood" class="header__logo">
+            </div>
             <div class="header__location">
-                <i class="fas fa-map-marker-alt"></i>
+                <div class="pin-icon">
+                    <i class="fas fa-map-marker-alt "></i>
+                </div>
                 <p>Paris, Belleville</p>
             </div>
             <div class="discover">
                 <h1>Reservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exception,séléctionnés par nos soins</p>
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
                 <button class="discover__btn">Explorer nos restaurants</button>
             </div>
         </header>
@@ -33,21 +36,37 @@
 
             <section class="howitworks">
                 <h2>Fonctionnement</h2>
+
                 <div class="howitworks__btn">
-                    <!-- icon n°1 -->
+                    <div class="nbr-icon">
+                        <div class="nbr-circle">
+                            <span class="nbr">1</span>
+                        </div>
+                    </div>
                     <i class="fas fa-mobile-alt"></i>
                     <p>Choisissez un restaurant</p>
                 </div>
+
                 <div class="howitworks__btn">
-                    <!-- icon n°2 -->
+                    <div class="nbr-icon">
+                        <div class="nbr-circle">
+                            <span class="nbr">2</span>
+                        </div>
+                    </div>    
                     <i class="fas fa-list-ul"></i>
                     <p>Composez votre menu</p>
                 </div>
+
                 <div class="howitworks__btn">
-                    <!-- icon n°3 -->
+                    <div class="nbr-icon">
+                        <div class="nbr-circle">
+                            <span class="nbr">3</span>
+                        </div>
+                    </div>    
                     <i class="fas fa-store"></i>
                     <p>Dégustez au restaurant</p>
                 </div>
+                
             </section>
 
             <section class="restos">
@@ -112,6 +131,3 @@
 </body>
 
 </html>
-
-
-bo

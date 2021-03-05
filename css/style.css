@@ -1,5 +1,117 @@
-img {
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+figure img {
   height: 150px;
   width: 150px;
 }
- 
+
+/*HEADER*/
+header .logo-banner {
+  display: flex;
+  justify-content: center;
+}
+
+header .header__logo {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: 1.8em;
+}
+
+header .header__location {
+  display: flex;
+  background-color: #EAEAEA;
+  justify-content: center;
+  padding-right: 1.5em;
+  box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.13) inset;
+  -webkit-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.13) inset;
+  -moz-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.13) inset;
+}
+
+header .pin-icon {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-right: 1em;
+}
+
+header .discover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #F6F6F6;
+}
+
+header .discover h1 {
+  margin-top: 1em;
+  width: 70%;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+header .discover p {
+  font-size: 1.5em;
+  font-weight: 100;
+  font-size: 18px;
+  margin-top: -0.5em;
+}
+
+header .discover .discover__btn {
+  border-radius: 30px;
+  height: 3.5em;
+  width: 15em;
+  font-size: 15px;
+  margin-top: 0.5em;
+  margin-bottom: 4em;
+  font-weight: 600;
+  color: #FFFFFF;
+  border: none;
+  background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
+}
+
+/*FONCTIONNEMENT*/
+.howitworks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.howitworks h2 {
+  align-self: flex-start;
+  margin-left: 0.5em;
+}
+
+.howitworks .howitworks__btn {
+  width: 90%;
+  background-color: #F6F6F6;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  margin: 0.5em 0;
+  height: 4.5em;
+  box-shadow: 0px 3px 5px 1px #cfc7cf;
+}
+
+.howitworks .howitworks__btn .nbr-icon .nbr-circle {
+  background-color: #9356DC;
+  border-radius: 15px;
+  height: 1.5em;
+  width: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -0.7em;
+}
+
+.howitworks .howitworks__btn .nbr-icon .nbr-circle .nbr {
+  color: #FFFFFF;
+  font-weight: 300;
+}
+/*# sourceMappingURL=style.css.map */
