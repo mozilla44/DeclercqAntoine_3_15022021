@@ -99,7 +99,7 @@ header .discover .discover__btn {
   box-shadow: 0px 3px 5px 1px #cfc7cf;
 }
 
-.howitworks .howitworks__btn .nbr-icon .nbr-circle {
+.howitworks .howitworks__btn .nbr-circle {
   background-color: #9356DC;
   border-radius: 15px;
   height: 1.5em;
@@ -110,7 +110,7 @@ header .discover .discover__btn {
   margin-left: -0.7em;
 }
 
-.howitworks .howitworks__btn .nbr-icon .nbr-circle .nbr {
+.howitworks .howitworks__btn .nbr-circle .nbr {
   color: #FFFFFF;
   font-weight: 300;
 }
