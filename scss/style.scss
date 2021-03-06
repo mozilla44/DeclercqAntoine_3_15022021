@@ -9,6 +9,7 @@ figure img {
     height: 150px;
     width: 150px;
 }
+
 /*HEADER*/
 
 header {
@@ -133,9 +134,16 @@ header {
     figure {
         background-color: $white;
         border-radius: 15px;
-        border: 1px solid red;
+        width: 90%;
+        margin: auto;
+        margin-top: 1.5em;
         display: flex;
         flex-direction: column;
+        box-shadow: 0px 3px 5px 0px rgba(151, 151, 151, 0.55);
+        -webkit-box-shadow: 0px 3px 5px 0px rgba(151, 151, 151, 0.55);
+        -moz-box-shadow: 0px 3px 5px 0px rgba(151, 151, 151, 0.55);
+        figcaption {
+        }
         .new {
             background-color: $color-third;
             color: #018766;
@@ -155,6 +163,7 @@ header {
     }
 
 }
+
 
 /*  FOOTER */ 
 
@@ -181,5 +190,4 @@ header {
         height: 1em;
         width: 1em;
     }
-
 }

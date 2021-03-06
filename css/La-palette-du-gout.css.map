@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/La-palette-du-gout.scss",
+        "../scss/_variables.scss"
+    ],
+    "names": [],
+    "file": "La-palette-du-gout.css"
+}
