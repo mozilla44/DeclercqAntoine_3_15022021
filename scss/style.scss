@@ -98,8 +98,13 @@ header {
         i {
             font-size: 20px;
             color: grey;
-            margin-left: 1em;
-            margin-right: 2em;
+            height: 1em;
+            width: 1em;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin-left: 5%;
+            margin-right: 10%;
         }
         .nbr-circle {
             background-color: $color-primary;
@@ -119,3 +124,62 @@ header {
 }
 
 /*RESTOS*/
+
+.restos {
+    background-color: $light-grey;
+    h2 {
+        margin-left: 0.5em;
+    }
+    figure {
+        background-color: $white;
+        border-radius: 15px;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        .new {
+            background-color: $color-third;
+            color: #018766;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 5em;
+            height: 2em;
+            border-radius: 3px;
+        }
+        img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+}
+
+/*  FOOTER */ 
+
+.footer {
+    background-color: #353535;
+    color: $white;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    .footer__logo {
+        font-family: $shirkhand;
+        margin-bottom: 0.5em;
+    }
+    p {
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+    }
+    div {
+        display: flex;
+        align-items: center;
+    }
+    i {
+        margin-right: 1em;
+        height: 1em;
+        width: 1em;
+    }
+
+}
