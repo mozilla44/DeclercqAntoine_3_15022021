@@ -102,8 +102,13 @@ header .discover .discover__btn {
 .howitworks .howitworks__btn i {
   font-size: 20px;
   color: grey;
-  margin-left: 1em;
-  margin-right: 2em;
+  height: 1em;
+  width: 1em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 5%;
+  margin-right: 10%;
 }
 
 .howitworks .howitworks__btn .nbr-circle {
@@ -123,4 +128,67 @@ header .discover .discover__btn {
 }
 
 /*RESTOS*/
+.restos {
+  background-color: #F6F6F6;
+}
+
+.restos h2 {
+  margin-left: 0.5em;
+}
+
+.restos figure {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.restos figure .new {
+  background-color: #99E2D0;
+  color: #018766;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+  height: 2em;
+  border-radius: 3px;
+}
+
+.restos figure img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*  FOOTER */
+.footer {
+  background-color: #353535;
+  color: #FFFFFF;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.footer .footer__logo {
+  font-family: "Shrikhand", cursive;
+  margin-bottom: 0.5em;
+}
+
+.footer p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.footer div {
+  display: flex;
+  align-items: center;
+}
+
+.footer i {
+  margin-right: 1em;
+  height: 1em;
+  width: 1em;
+}
 /*# sourceMappingURL=style.css.map */
