@@ -150,6 +150,14 @@ header .discover .discover__btn {
   -moz-box-shadow: 0px 3px 5px 0px rgba(151, 151, 151, 0.55);
 }
 
+.restos figure figcaption {
+  line-height: 30px;
+}
+
+.restos figure figcaption p, .restos figure figcaption h3 {
+  margin: 0;
+}
+
 .restos figure .new {
   background-color: #99E2D0;
   color: #018766;

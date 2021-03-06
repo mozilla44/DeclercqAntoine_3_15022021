@@ -144,6 +144,10 @@ header {
         -webkit-box-shadow: 0px 3px 5px 0px rgba(151, 151, 151, 0.55);
         -moz-box-shadow: 0px 3px 5px 0px rgba(151, 151, 151, 0.55);
         figcaption {
+            line-height: 30px;
+            p,h3 {
+                margin: 0;
+            }
         }
         .new {
             background-color: $color-third;
@@ -162,7 +166,6 @@ header {
             object-fit: cover;
         }
     }
-
 }
 
 
