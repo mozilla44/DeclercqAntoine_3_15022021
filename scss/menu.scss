@@ -21,18 +21,23 @@ header {
     }
     .header-background {
         width: 100%;
-        position: relative;
+        
     }
 }
 
+
+.container {
+    position: absolute;
+    margin-top: -4rem;
+    width: 100%;
+}
 /* MENU */
 
 .menu {
     background-color: $light-grey;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    position: absolute;
-    top: 30%;
+   
     width: 100%;
     .restaurant-name {
         display: flex;

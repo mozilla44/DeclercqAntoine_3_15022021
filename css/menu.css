@@ -20,7 +20,12 @@ header .logo-banner .header__logo {
 
 header .header-background {
   width: 100%;
-  position: relative;
+}
+
+.container {
+  position: absolute;
+  margin-top: -4rem;
+  width: 100%;
 }
 
 /* MENU */
@@ -28,8 +33,6 @@ header .header-background {
   background-color: #F6F6F6;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  position: absolute;
-  top: 30%;
   width: 100%;
 }
 
