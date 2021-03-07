@@ -1,0 +1,139 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+/* HEADER */
+header .logo-banner {
+  display: flex;
+  height: 3em;
+  align-items: center;
+  margin: 0 1em;
+}
+
+header .logo-banner .header__logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 1.5em;
+}
+
+header .header-background {
+  width: 100%;
+  position: relative;
+}
+
+/* MENU */
+.menu {
+  background-color: #F6F6F6;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+
+.menu .restaurant-name {
+  display: flex;
+}
+
+.menu .restaurant-name h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: lighter;
+  font-size: 20px;
+  width: 100%;
+  margin-left: 1em;
+}
+
+.menu .restaurant-name i {
+  display: flex;
+  align-items: center;
+  margin-right: 2em;
+  font-size: 20px;
+}
+
+.menu .starters, .menu .meals, .menu .deserts {
+  padding: 0 1em;
+}
+
+.menu .starters .menu__btn, .menu .meals .menu__btn, .menu .deserts .menu__btn {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  height: 4em;
+  padding: 0.4em;
+  margin: 1em 0;
+  line-height: 5px;
+  box-shadow: 0px 3px 5px 0px rgba(151, 151, 151, 0.55);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(151, 151, 151, 0.55);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(151, 151, 151, 0.55);
+}
+
+.menu .starters h2, .menu .meals h2, .menu .deserts h2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.menu .starters h3, .menu .meals h3, .menu .deserts h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.menu .starters p, .menu .meals p, .menu .deserts p {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.menu .order {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 8em;
+}
+
+.menu .order .order__btn {
+  border-radius: 30px;
+  height: 3.5em;
+  width: 15em;
+  font-size: 15px;
+  margin-top: 0.5em;
+  margin-bottom: 4em;
+  font-weight: 600;
+  color: #FFFFFF;
+  border: none;
+  background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
+  margin: auto;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #353535;
+  color: #FFFFFF;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.footer .footer__logo {
+  font-family: "Shrikhand", cursive;
+  margin-bottom: 0.5em;
+}
+
+.footer p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.footer div {
+  display: flex;
+  align-items: center;
+}
+
+.footer i {
+  margin-right: 1em;
+  height: 1em;
+  width: 1em;
+}
+/*# sourceMappingURL=menu.css.map */

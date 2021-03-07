@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <title>La palette du gout</title>
 </head>
@@ -18,11 +18,11 @@
 <body>
     <div class="container">
         <header class="header">
-            <i class="fas fa-arrow-left"></i>
-            <img src="images/logo/ohmyfood@2x.svg">
-            <div class="intro__img">
-                <img src="images/restaurants/palette.jpg">
+            <div class="logo-banner">
+                <i class="fas fa-arrow-left"></i>
+                <img src="images/logo/ohmyfood@2x.svg" class="header__logo">
             </div>
+            <img src="images/restaurants/palette.jpg" alt="la palette du gout" class="header-background">
         </header>
 
 
@@ -57,8 +57,8 @@
                     <p>Accompagné de sa ribambelle de légumes</p>
                     <p class="price">40€</p>
                 </div>
-                <div class="menu__btn-">
-                    <h3>Parlentier et sa queue de boeuf</h3>
+                <div class="menu__btn">
+                    <h3>Parmentier et sa queue de boeuf</h3>
                     <p>À la truffe noire sur sa purée de panais</p>
                     <p class="price">35€</p>
                 </div>
@@ -68,7 +68,7 @@
                     <p class="price">44€</p>
                 </div>
             </div>
-            <div class="Deserts">
+            <div class="deserts">
                 <h2>DESSERTS</h2>
                 <div class="menu__btn">
                     <h3>Paris-Brest</h3>
@@ -86,16 +86,19 @@
                     <p class="price">23€</p>
                 </div>
             </div>
-            <button class="order">Commander</button>
+            <div class="order">
+                <button class="order__btn">Commander</button>
+            </div>
         </main>
-        <footer>
-            <p>ohmyfood</p>
+
+        <footer class="footer">
+            <p class="footer__logo">ohmyfood</p>
             <div class="propose">
-                <!-- icon fork -->
+                <i class="fas fa-utensils"></i>
                 <p>proposer un restaurant</p>
             </div>
             <div class="partner">
-                <!-- icon partner -->
+                <i class="fas fa-hands-helping"></i>
                 <p>Devenir partenaire</p>
             </div>
             <div class="legal">

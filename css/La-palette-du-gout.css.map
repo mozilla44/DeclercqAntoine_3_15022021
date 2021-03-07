@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AAAA,MAAM,CAAC,GAAG,CAAC;EACP,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;CAChB;;AAED,AAAA,IAAI,CAAC;EACD,WAAW,ECAN,QAAQ,EAAE,UAAU;CDC5B",
     "sources": [
         "../scss/La-palette-du-gout.scss",
         "../scss/_variables.scss"
