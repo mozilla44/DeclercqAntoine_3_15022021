@@ -6,11 +6,6 @@ body {
     font-family: $roboto;
 }
 
-figure img {
-    height: 150px;
-    width: 150px;
-}
-
 /*HEADER*/
 
 header {
@@ -50,16 +45,15 @@ header {
             font-weight: 500;
         }
         p {
-            font-size: 1.5em;
+            font-size: 1em;
             font-weight: 100;
-            font-size: 18px;
-            margin-top: -0.5em;
+            margin-top: -0.3em;
         }
         .discover__btn {
-            border-radius: 30px;
+            border-radius: 1.875em;
             height: 3.5em;
             width: 15em;
-            font-size: 15px;
+            font-size: 0.9375em;
             margin-top: 0.5em;
             margin-bottom: 4em;
             font-weight: 600;
@@ -67,6 +61,10 @@ header {
             border: none;
             background: $gradient;
             @include purple-shadow;
+            
+            &:hover {
+                @include purple-btn-hover;
+            }
         }
     }
 }
@@ -85,14 +83,14 @@ header {
     .howitworks__btn {
         width: 90%;
         background-color: $light-grey;
-        border-radius: 15px;
+        border-radius: 0.9375em;
         display: flex;
         align-items: center;
         margin: 0.5em 0;
         height: 4.5em;
         @include shadow;
         i {
-            font-size: 20px;
+            font-size: 1.25em;
             color: grey;
             height: 1em;
             width: 1em;
@@ -104,7 +102,7 @@ header {
         }
         .nbr-circle {
             background-color: $color-primary;
-            border-radius: 15px;
+            border-radius: 0.9375em;
             height: 1.5em;
             width: 1.5em;
             display: flex;
@@ -133,38 +131,46 @@ header {
         color: inherit;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
-    }
-    figure {
-        background-color: $white;
-        border-radius: 15px;
-        width: 90%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        @include shadow;
-        figcaption {
-            line-height: 30px;
-            p,h3 {
-                margin: 0;
+        figure {
+            background-color: $white;
+            border-radius: 0.9375em;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            @include shadow;
+            img {
+                height: 9em;
+                width: 100%;
+                object-fit: cover;
+                border-top-left-radius: 0.9375em;
+                border-top-right-radius: 0.9375em;
+                width: 100%;
+                object-fit: cover;
+            }
+            figcaption {
+                line-height: 1.5em;
+                p,h3 {
+                    margin: 0;
+                }
+            }
+            .new {
+                background-color: $color-third;
+                color: #018766;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 5em;
+                height: 2em;
+                border-radius: 0.1875em;
+                position: absolute;
+                top: 0.9em;
+                right: 0.5em;
             }
         }
-        .new {
-            background-color: $color-third;
-            color: #018766;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 5em;
-            height: 2em;
-            border-radius: 3px;
-        }
-        img {
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            width: 100%;
-            object-fit: cover;
-        }
     }
+    
 }
 
 
@@ -173,6 +179,7 @@ header {
 .footer {
     background-color: #353535;
     color: $white;
+    margin-top: 4em;
     padding-left: 1em;
     padding-top: 1em;
     padding-bottom: 2em;
@@ -180,13 +187,15 @@ header {
         font-family: $shirkhand;
         margin-bottom: 0.5em;
     }
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        align-items: center;
+    }
     p {
         margin-top: 0.2em;
         margin-bottom: 0.2em;
-    }
-    div {
-        display: flex;
-        align-items: center;
     }
     i {
         margin-right: 1em;

@@ -1,11 +1,10 @@
--- nouveau par dessus img ( **relative/abolute & float ?** ) (**nouveau avant img dans html ?**)
--- figure taille rectangulaire
+
+--image dans les figures (zoom)
 -- placement coeur (**revoir html ?**)
 -- taille bouton menu 
 -- prix à droite 
 
-
-
+                <!--  NOTES  -->
 
 
 div pictogtramme html bloc vert pousse prix  elipisis paragraphe texte
@@ -16,20 +15,8 @@ opacité
 
 div id loadong spinner
 délai 3 sec 
-
 finir structure html 
-em et pas pixel 
-
 meta description author 
-images alt 
-
-
 FINIR HTML EN PREMIER 
-
-__ ou -- 
-
-harmoniser noms classes 
-
 pesner responsive 
-
-dossier menu 
+ dossier menu 

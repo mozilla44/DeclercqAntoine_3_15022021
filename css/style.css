@@ -3,11 +3,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-figure img {
-  height: 150px;
-  width: 150px;
-}
-
 /*HEADER*/
 header .logo-banner {
   display: flex;
@@ -54,17 +49,16 @@ header .discover h1 {
 }
 
 header .discover p {
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 100;
-  font-size: 18px;
-  margin-top: -0.5em;
+  margin-top: -0.3em;
 }
 
 header .discover .discover__btn {
-  border-radius: 30px;
+  border-radius: 1.875em;
   height: 3.5em;
   width: 15em;
-  font-size: 15px;
+  font-size: 0.9375em;
   margin-top: 0.5em;
   margin-bottom: 4em;
   font-weight: 600;
@@ -74,6 +68,13 @@ header .discover .discover__btn {
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
+}
+
+header .discover .discover__btn:hover {
+  box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.75);
+  opacity: 0.85;
 }
 
 /*FONCTIONNEMENT*/
@@ -91,7 +92,7 @@ header .discover .discover__btn {
 .howitworks .howitworks__btn {
   width: 90%;
   background-color: #F6F6F6;
-  border-radius: 15px;
+  border-radius: 0.9375em;
   display: flex;
   align-items: center;
   margin: 0.5em 0;
@@ -102,7 +103,7 @@ header .discover .discover__btn {
 }
 
 .howitworks .howitworks__btn i {
-  font-size: 20px;
+  font-size: 1.25em;
   color: grey;
   height: 1em;
   width: 1em;
@@ -115,7 +116,7 @@ header .discover .discover__btn {
 
 .howitworks .howitworks__btn .nbr-circle {
   background-color: #9356DC;
-  border-radius: 15px;
+  border-radius: 0.9375em;
   height: 1.5em;
   width: 1.5em;
   display: flex;
@@ -146,27 +147,38 @@ header .discover .discover__btn {
   margin-bottom: 1.5em;
 }
 
-.restaurants figure {
+.restaurants .card figure {
   background-color: #FFFFFF;
-  border-radius: 15px;
+  border-radius: 0.9375em;
   width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
+  position: relative;
   box-shadow: 0px 3px 5px 1px #cfc7cf;
   -webkit-box-shadow: 0px 3px 5px 1px #cfc7cf;
   -moz-box-shadow: 0px 3px 5px 1px #cfc7cf;
 }
 
-.restaurants figure figcaption {
-  line-height: 30px;
+.restaurants .card figure img {
+  height: 9em;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 0.9375em;
+  border-top-right-radius: 0.9375em;
+  width: 100%;
+  object-fit: cover;
 }
 
-.restaurants figure figcaption p, .restaurants figure figcaption h3 {
+.restaurants .card figure figcaption {
+  line-height: 1.5em;
+}
+
+.restaurants .card figure figcaption p, .restaurants .card figure figcaption h3 {
   margin: 0;
 }
 
-.restaurants figure .new {
+.restaurants .card figure .new {
   background-color: #99E2D0;
   color: #018766;
   display: flex;
@@ -174,20 +186,17 @@ header .discover .discover__btn {
   align-items: center;
   width: 5em;
   height: 2em;
-  border-radius: 3px;
-}
-
-.restaurants figure img {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  width: 100%;
-  object-fit: cover;
+  border-radius: 0.1875em;
+  position: absolute;
+  top: 0.9em;
+  right: 0.5em;
 }
 
 /*  FOOTER */
 .footer {
   background-color: #353535;
   color: #FFFFFF;
+  margin-top: 4em;
   padding-left: 1em;
   padding-top: 1em;
   padding-bottom: 2em;
@@ -198,14 +207,16 @@ header .discover .discover__btn {
   margin-bottom: 0.5em;
 }
 
+.footer a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
 .footer p {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
-}
-
-.footer div {
-  display: flex;
-  align-items: center;
 }
 
 .footer i {
