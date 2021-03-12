@@ -59,31 +59,43 @@ header .header-background {
   padding: 0 1em;
 }
 
-.menu .starters .menu__btn, .menu .meals .menu__btn, .menu .deserts .menu__btn {
+.menu .starters h2, .menu .meals h2, .menu .deserts h2 {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.menu .starters .menu-btn, .menu .meals .menu-btn, .menu .deserts .menu-btn {
   background-color: #FFFFFF;
   border-radius: 0.9375em;
   height: 4em;
   padding: 0.4em;
   margin: 1em 0;
   line-height: 0.3125em;
+  display: flex;
   box-shadow: 0px 3px 5px 1px #cfc7cf;
   -webkit-box-shadow: 0px 3px 5px 1px #cfc7cf;
   -moz-box-shadow: 0px 3px 5px 1px #cfc7cf;
 }
 
-.menu .starters h2, .menu .meals h2, .menu .deserts h2 {
-  font-size: 1em;
-  font-weight: 300;
+.menu .starters .ellipsis, .menu .meals .ellipsis, .menu .deserts .ellipsis {
+  flex: 1;
 }
 
-.menu .starters h3, .menu .meals h3, .menu .deserts h3 {
+.menu .starters .ellipsis .ellipsis__title, .menu .meals .ellipsis .ellipsis__title, .menu .deserts .ellipsis .ellipsis__title {
   font-size: 0.9375em;
   font-weight: 500;
 }
 
-.menu .starters p, .menu .meals p, .menu .deserts p {
+.menu .starters .ellipsis .ellipsis__description, .menu .meals .ellipsis .ellipsis__description, .menu .deserts .ellipsis .ellipsis__description {
   font-size: 0.75em;
   font-weight: 200;
+}
+
+.menu .starters .price, .menu .meals .price, .menu .deserts .price {
+  font-size: 0.8em;
+  font-weight: 500;
+  padding-top: 13%;
+  margin-right: 0.2em;
 }
 
 .menu .order {
