@@ -78,7 +78,6 @@ header .header-background {
 }
 
 .menu .starters .ellipsis, .menu .meals .ellipsis, .menu .deserts .ellipsis {
-  border: 3px solid red;
   flex: 1;
 }
 
@@ -93,11 +92,10 @@ header .header-background {
 }
 
 .menu .starters .price, .menu .meals .price, .menu .deserts .price {
-  border: 3px solid blue;
   font-size: 0.8em;
   font-weight: 500;
-  display: flex;
-  align-items: baseline;
+  padding-top: 13%;
+  margin-right: 0.2em;
 }
 
 .menu .order {

@@ -73,7 +73,6 @@ header {
             @include shadow;
         }
         .ellipsis {
-            border: 3px solid red;
             flex: 1;
             .ellipsis__title {
                 font-size: 0.9375em;
@@ -85,11 +84,11 @@ header {
             }
         }
         .price {
-            border: 3px solid blue;
+            
             font-size: 0.8em;
             font-weight: 500;
-            display: flex;
-            align-items: baseline;
+            padding-top: 13%;
+            margin-right: 0.2em;
         }
     }
     .order {
