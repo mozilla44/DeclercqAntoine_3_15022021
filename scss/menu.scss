@@ -109,6 +109,7 @@ header {
             background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
             margin: auto;
             @include purple-shadow;
+            transition: all 200ms;
 
             &:hover {
                 @include purple-btn-hover;

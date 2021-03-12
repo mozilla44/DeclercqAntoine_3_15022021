@@ -65,6 +65,7 @@ header .discover .discover__btn {
   color: #FFFFFF;
   border: none;
   background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  transition: all 200ms;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);

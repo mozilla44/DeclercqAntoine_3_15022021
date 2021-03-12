@@ -60,6 +60,7 @@ header {
             color: $white;
             border: none;
             background: $gradient;
+            transition: all 200ms; 
             @include purple-shadow;
             
             &:hover {
