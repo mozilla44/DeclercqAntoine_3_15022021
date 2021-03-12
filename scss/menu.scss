@@ -58,6 +58,10 @@ header {
     }
     .starters,.meals,.deserts {
         padding: 0 1em;
+        h2 {
+            font-size: 1em;
+            font-weight: 300;
+        }
         .menu-btn {
             background-color: $white;
             border-radius: 0.9375em;
@@ -66,10 +70,6 @@ header {
             margin: 1em 0;
             line-height: 0.3125em;
             @include shadow;
-        }
-        h2 {
-            font-size: 1em;
-            font-weight: 300;
         }
         h3 {
             font-size: 0.9375em;
