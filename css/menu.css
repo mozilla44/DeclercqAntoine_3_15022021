@@ -59,7 +59,7 @@ header .header-background {
   padding: 0 1em;
 }
 
-.menu .starters .menu__btn, .menu .meals .menu__btn, .menu .deserts .menu__btn {
+.menu .starters .menu-btn, .menu .meals .menu-btn, .menu .deserts .menu-btn {
   background-color: #FFFFFF;
   border-radius: 0.9375em;
   height: 4em;
