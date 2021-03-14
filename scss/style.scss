@@ -1,10 +1,40 @@
 @import "_variables.scss";
 @import "_mixins.scss";
+@import "_keyframes.scss";
 
 body {
     margin: 0;
     font-family: $roboto;
 }
+
+
+/* LOADER*/
+
+.loader {
+    border: 3px solid red;
+    display: flex;
+    justify-content: center;
+    .bouncing-ball {
+        width: 1.5em;
+        height: 1.5em;
+        margin: 5em 1em;
+        border-radius: 0.9375em;
+        &.ball-1 {
+            background-color: $color-primary;
+            animation: bounce .5s ease .25s infinite alternate;
+        }
+        &.ball-2 {
+            background-color: $color-secondary;
+            animation: bounce .5s ease .25s infinite alternate;
+        }
+        &.ball-3 {
+            background-color: $color-third;
+            animation: bounce .5s ease .25s infinite alternate;
+        }
+    }
+
+}
+
 
 /*HEADER*/
 

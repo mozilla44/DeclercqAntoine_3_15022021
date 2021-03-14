@@ -1,6 +1,41 @@
+@keyframes bounce {
+  100% {
+    transform: translateY(-4.375em);
+  }
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+}
+
+/* LOADER*/
+.loader {
+  border: 3px solid red;
+  display: flex;
+  justify-content: center;
+}
+
+.loader .bouncing-ball {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 5em 1em;
+  border-radius: 0.9375em;
+}
+
+.loader .bouncing-ball.ball-1 {
+  background-color: #9356DC;
+  animation: bounce .5s ease .25s infinite alternate;
+}
+
+.loader .bouncing-ball.ball-2 {
+  background-color: #FF79DA;
+  animation: bounce .5s ease .25s infinite alternate;
+}
+
+.loader .bouncing-ball.ball-3 {
+  background-color: #99E2D0;
+  animation: bounce .5s ease .25s infinite alternate;
 }
 
 /*HEADER*/
