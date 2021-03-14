@@ -1,8 +1,9 @@
 
---image dans les figures (zoom)
+
 -- placement coeur (**revoir html ?**)
--- taille bouton menu 
--- prix à droite 
+**text overflow**
+
+
 
                 <!--  NOTES  -->
 

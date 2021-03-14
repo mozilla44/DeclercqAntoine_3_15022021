@@ -86,11 +86,30 @@ header {
         .price {
             font-size: 0.8em;
             font-weight: 500;
-            padding-top: 15%;
+            padding-top: 3.2em;
             margin-right: 1em;
         }
         .confirm {
-            display: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4em;
+            background-color: $color-third;
+            margin: -0.4em;
+            border-bottom-right-radius: 0.9375em;
+            border-top-right-radius: 0.9375em;
+            .confirm__circle {
+                background-color: $white;
+                height: 1.5em;
+                width: 1.5em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0.9375em;
+                .checkmark {
+                    color: $color-third;
+                }
+            }
         }
     }
     .order {
