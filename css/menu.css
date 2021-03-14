@@ -99,6 +99,10 @@ header .header-background {
   margin-right: 1em;
 }
 
+.menu .starters .confirm, .menu .meals .confirm, .menu .deserts .confirm {
+  display: none;
+}
+
 .menu .order {
   display: flex;
   justify-content: center;
