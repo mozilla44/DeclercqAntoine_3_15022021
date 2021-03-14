@@ -21,15 +21,15 @@ body {
         border-radius: 0.9375em;
         &.ball-1 {
             background-color: $color-primary;
-            animation: bounce .5s ease .25s infinite alternate;
+            animation: bounce .5s ease .0s infinite alternate;
         }
         &.ball-2 {
             background-color: $color-secondary;
-            animation: bounce .5s ease .25s infinite alternate;
+            animation: bounce .5s ease .10s infinite alternate;
         }
         &.ball-3 {
             background-color: $color-third;
-            animation: bounce .5s ease .25s infinite alternate;
+            animation: bounce .5s ease .15s infinite alternate;
         }
     }
 
