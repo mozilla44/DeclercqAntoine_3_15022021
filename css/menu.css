@@ -25,6 +25,8 @@ header .logo-banner .header__logo {
 
 header .header-background {
   width: 100%;
+  height: 15em;
+  object-fit: cover;
 }
 
 #container {
