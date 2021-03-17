@@ -126,6 +126,13 @@ header .discover .discover__btn:hover {
   margin-left: 0.5em;
 }
 
+.howitworks .howitworks-mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .howitworks .howitworks__btn {
   width: 90%;
   background-color: #F6F6F6;
