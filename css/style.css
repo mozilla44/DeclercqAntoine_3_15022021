@@ -10,30 +10,30 @@ body {
 }
 
 /* LOADER*/
-.loader {
+#loader {
   border: 3px solid red;
   display: flex;
   justify-content: center;
 }
 
-.loader .bouncing-ball {
+#loader .bouncing-ball {
   width: 1.5em;
   height: 1.5em;
   margin: 5em 1em;
   border-radius: 0.9375em;
 }
 
-.loader .bouncing-ball.ball-1 {
+#loader .bouncing-ball.ball-1 {
   background-color: #9356DC;
   animation: bounce .5s ease .0s infinite alternate;
 }
 
-.loader .bouncing-ball.ball-2 {
+#loader .bouncing-ball.ball-2 {
   background-color: #FF79DA;
   animation: bounce .5s ease .10s infinite alternate;
 }
 
-.loader .bouncing-ball.ball-3 {
+#loader .bouncing-ball.ball-3 {
   background-color: #99E2D0;
   animation: bounce .5s ease .15s infinite alternate;
 }
