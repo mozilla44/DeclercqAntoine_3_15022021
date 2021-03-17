@@ -11,6 +11,11 @@ header .logo-banner {
   margin: 0 1em;
 }
 
+header .logo-banner .link-arrow {
+  text-decoration: none;
+  color: inherit;
+}
+
 header .logo-banner .header__logo {
   display: flex;
   width: 100%;
