@@ -3,4 +3,8 @@
         transform: translateY(-4.375em);
     }
 }
-
+@keyframes hideit {
+    100% {
+      opacity: 0;
+    }
+  } 
