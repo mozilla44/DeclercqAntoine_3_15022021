@@ -11,9 +11,18 @@ body {
 /* LOADER*/
 
 #loader {
-    border: 3px solid red;
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    background-color: white;
+    animation: hideit;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
     .bouncing-ball {
         width: 1.5em;
         height: 1.5em;
