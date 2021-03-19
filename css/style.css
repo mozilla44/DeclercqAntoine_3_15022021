@@ -231,7 +231,7 @@ header .discover .discover__btn:hover {
   text-decoration: none;
   color: inherit;
   margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 .restaurants .card figure {
@@ -315,7 +315,6 @@ header .discover .discover__btn:hover {
 .footer {
   background-color: #353535;
   color: #FFFFFF;
-  margin-top: 4em;
   padding-left: 1em;
   padding-top: 1em;
   padding-bottom: 2em;
