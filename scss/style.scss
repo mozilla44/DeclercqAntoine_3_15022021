@@ -120,7 +120,11 @@ header {
     h2 {
         align-self: flex-start;
         margin-left: 0.5em;
+        @include desktop {
+            margin-left: 1.5em;
+        }
     }
+    
     .howitworks-responsive {
         width: 100%;
         display: flex;
@@ -187,6 +191,16 @@ header {
     h2 {
         margin-left: 0.5em;
         padding-top: 1em;
+        @include desktop {
+            margin-left: 1.2em;
+        }
+    }
+    
+    .restaurants-responsive {
+        @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+        }
     }
     .card {
         display: flex;
@@ -194,6 +208,9 @@ header {
         color: inherit;
         margin-top: 1.5em;
         padding-bottom: 1.5em;
+        @include desktop {
+            width: 50%;
+        }
         figure {
             background-color: $white;
             border-radius: 0.9375em;

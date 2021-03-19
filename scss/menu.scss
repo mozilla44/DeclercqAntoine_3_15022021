@@ -43,8 +43,18 @@ header {
     background-color: $light-grey;
     border-top-left-radius: 1.875em;
     border-top-right-radius: 1.875em;
-   
     width: 100%;
+    .menu-responsive {
+        @include desktop {
+        display: flex;
+        justify-content: space-between;
+        }
+    }
+    @include desktop {
+        .starters,.meals,.deserts {
+            width: 30%;
+        }
+    }
     .restaurant-name {
         display: flex;
         h1 {

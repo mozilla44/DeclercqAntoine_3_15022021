@@ -141,6 +141,12 @@ header .discover .discover__btn:hover {
   margin-left: 0.5em;
 }
 
+@media all and (min-width: 851px) {
+  .howitworks h2 {
+    margin-left: 1.5em;
+  }
+}
+
 .howitworks .howitworks-responsive {
   width: 100%;
   display: flex;
@@ -227,12 +233,31 @@ header .discover .discover__btn:hover {
   padding-top: 1em;
 }
 
+@media all and (min-width: 851px) {
+  .restaurants h2 {
+    margin-left: 1.2em;
+  }
+}
+
+@media all and (min-width: 851px) {
+  .restaurants .restaurants-responsive {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .restaurants .card {
   display: flex;
   text-decoration: none;
   color: inherit;
   margin-top: 1.5em;
   padding-bottom: 1.5em;
+}
+
+@media all and (min-width: 851px) {
+  .restaurants .card {
+    width: 50%;
+  }
 }
 
 .restaurants .card figure {
