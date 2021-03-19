@@ -148,6 +148,13 @@ header .discover .discover__btn:hover {
   align-items: center;
 }
 
+@media all and (min-width: 480px) {
+  .howitworks .howitworks-mobile {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
 .howitworks .howitworks__btn {
   width: 90%;
   background-color: #F6F6F6;
@@ -159,6 +166,13 @@ header .discover .discover__btn:hover {
   box-shadow: 0px 3px 5px 1px #cfc7cf;
   -webkit-box-shadow: 0px 3px 5px 1px #cfc7cf;
   -moz-box-shadow: 0px 3px 5px 1px #cfc7cf;
+}
+
+@media all and (min-width: 480px) {
+  .howitworks .howitworks__btn {
+    width: 30%;
+    margin: 1em;
+  }
 }
 
 .howitworks .howitworks__btn i {

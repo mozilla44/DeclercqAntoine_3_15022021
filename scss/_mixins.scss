@@ -30,3 +30,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+@mixin tablet {
+    @media all and (min-width:480px){
+        @content;
+    }
+}
