@@ -250,6 +250,19 @@ header .discover .discover__btn:hover {
   font-size: 1.5em;
 }
 
+.restaurants .card figure figcaption .fa-heart {
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.restaurants .card figure figcaption .fa-heart:hover {
+  transition: .3s ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+}
+
 .restaurants .card figure .new {
   background-color: #99E2D0;
   color: #018766;
