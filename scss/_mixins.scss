@@ -32,7 +32,13 @@
 }
 
 @mixin tablet {
-    @media all and (min-width:480px){
+    @media all and (min-width:480px) and (max-width:850px){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media all and (min-width:851px){
         @content;
     }
 }
