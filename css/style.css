@@ -148,7 +148,7 @@ header .discover .discover__btn:hover {
   align-items: center;
 }
 
-@media all and (min-width: 480px) and (max-width: 850px) {
+@media all and (min-width: 851px) {
   .howitworks .howitworks-responsive {
     flex-direction: row;
     justify-content: center;
@@ -175,7 +175,7 @@ header .discover .discover__btn:hover {
   -moz-box-shadow: 0px 3px 5px 1px #cfc7cf;
 }
 
-@media all and (min-width: 480px) and (max-width: 850px) {
+@media all and (min-width: 851px) {
   .howitworks .howitworks__btn {
     width: 30%;
     margin: 1em;
