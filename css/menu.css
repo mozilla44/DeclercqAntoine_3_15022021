@@ -73,6 +73,15 @@ header .header-background {
   align-items: center;
   margin-right: 2em;
   font-size: 1.25em;
+  cursor: pointer;
+}
+
+.menu .restaurant-name .fa-heart:hover {
+  transition: .3s ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 }
 
 .menu .starters, .menu .meals, .menu .deserts {
@@ -82,6 +91,14 @@ header .header-background {
 .menu .starters h2, .menu .meals h2, .menu .deserts h2 {
   font-size: 1em;
   font-weight: 300;
+}
+
+.menu .starters h2::after, .menu .meals h2::after, .menu .deserts h2::after {
+  content: "";
+  width: 2.5em;
+  height: 0.2em;
+  background-color: #99E2D0;
+  display: block;
 }
 
 .menu .starters .menu-btn, .menu .meals .menu-btn, .menu .deserts .menu-btn {

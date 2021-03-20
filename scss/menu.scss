@@ -69,13 +69,29 @@ header {
             align-items: center;
             margin-right: 2em;
             font-size: 1.25em;
+            cursor: pointer;
         }
+       
+          .fa-heart:hover{
+            transition: .3s ease;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+            background-image: $gradient;
+          }
     }
     .starters,.meals,.deserts {
         padding: 0 1em;
         h2 {
             font-size: 1em;
             font-weight: 300;
+        }
+        h2::after{
+            content: "";
+            width: 2.5em;
+            height: 0.2em;
+            background-color: $color-third;
+            display: block;
         }
         .menu-btn {
             background-color: $white;
