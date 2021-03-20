@@ -112,6 +112,7 @@ header .header-background {
   box-shadow: 0px 3px 5px 1px #cfc7cf;
   -webkit-box-shadow: 0px 3px 5px 1px #cfc7cf;
   -moz-box-shadow: 0px 3px 5px 1px #cfc7cf;
+  cursor: pointer;
 }
 
 .menu .starters .ellipsis, .menu .meals .ellipsis, .menu .deserts .ellipsis {

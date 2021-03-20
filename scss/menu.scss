@@ -102,6 +102,7 @@ header {
             line-height: 0.3125em;
             display: flex;
             @include shadow;
+            cursor: pointer;
         }
         .ellipsis {
             flex: 1;
