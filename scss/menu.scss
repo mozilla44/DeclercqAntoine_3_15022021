@@ -97,42 +97,59 @@ header {
         .menu-btn {
             background-color: $white;
             border-radius: 0.9375em;
-            height: 4em;
-            padding: 0.4em;
+            padding: 1em;
             margin: 1em 0;
-            line-height: 0.3125em;
             display: flex;
             @include shadow;
             cursor: pointer;
             transform: scale(0);
+            transform-origin: top;
             animation: pop-in 0.5s ease;
             animation-fill-mode: forwards;
         }
         .ellipsis {
             flex: 1;
-            margin: auto;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
             .ellipsis__title {
                 font-size: 0.9375em;
                 font-weight: 500;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                margin: 0;
             }
             .ellipsis__description {
                 font-size: 0.8em;
                 font-weight: 300;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                margin: 0;
             }
         }
         .price {
             font-size: 0.8em;
             font-weight: 500;
-            padding-top: 3.2em;
-            margin-right: 1em;
+            // padding-top: 3.2em;
+            // margin-right: 1em;
+            padding-left: 0.5em;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
         }
         .confirm {
             display: flex;
+            display: none;
             align-items: center;
             justify-content: center;
             width: 4em;
             background-color: $color-third;
-            margin: -0.4em;
+            margin-left: 0.5em;
+            margin-top: -1em;
+            margin-bottom: -1em;
+            margin-right: -1em;
             border-bottom-right-radius: 0.9375em;
             border-top-right-radius: 0.9375em;
             .confirm__circle {
