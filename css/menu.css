@@ -1,3 +1,24 @@
+@keyframes bounce {
+  100% {
+    transform: translateY(-4.375em);
+  }
+}
+
+@keyframes hideit {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -113,6 +134,9 @@ header .header-background {
   -webkit-box-shadow: 0px 3px 5px 1px #cfc7cf;
   -moz-box-shadow: 0px 3px 5px 1px #cfc7cf;
   cursor: pointer;
+  transform: scale(0);
+  animation: pop-in 0.5s ease;
+  animation-fill-mode: forwards;
 }
 
 .menu .starters .ellipsis, .menu .meals .ellipsis, .menu .deserts .ellipsis {
