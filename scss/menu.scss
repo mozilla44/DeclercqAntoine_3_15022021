@@ -102,9 +102,9 @@ header {
             display: flex;
             @include shadow;
             cursor: pointer;
-            transform: scale(0);
+            
             transform-origin: top;
-            animation: pop-in 0.5s ease;
+            animation: pop-in 1.5s ease;
             animation-fill-mode: forwards;
         }
         .ellipsis {
