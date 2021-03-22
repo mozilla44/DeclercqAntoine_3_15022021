@@ -199,6 +199,14 @@ header .discover .discover__btn:hover {
   }
 }
 
+.howitworks .howitworks__btn:hover {
+  background-color: #F4EDFE;
+}
+
+.howitworks .howitworks__btn:hover i {
+  color: #9356DC;
+}
+
 @media all and (min-width: 851px) {
   .howitworks .howitworks__btn {
     width: 30%;

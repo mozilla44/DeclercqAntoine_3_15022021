@@ -152,6 +152,12 @@ header {
             width: 30%;
             margin: 1em;
         }
+        &:hover {
+            background-color: #F4EDFE;
+        }
+        &:hover i {
+            color: $color-primary;
+        }
         @include desktop {
             width: 30%;
             margin: 1em;
