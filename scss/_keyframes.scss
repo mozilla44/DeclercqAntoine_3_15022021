@@ -6,6 +6,7 @@
 @keyframes hideit {
     100% {
       opacity: 0;
+      z-index: -20;
     }
 } 
 
