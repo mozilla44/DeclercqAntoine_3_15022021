@@ -134,9 +134,50 @@ header .header-background {
   -webkit-box-shadow: 0px 3px 5px 1px #cfc7cf;
   -moz-box-shadow: 0px 3px 5px 1px #cfc7cf;
   cursor: pointer;
+  opacity: 0;
   transform-origin: top;
   animation: pop-in 1.5s ease;
   animation-fill-mode: forwards;
+}
+
+.menu .starters .menu-btn.delay-1, .menu .meals .menu-btn.delay-1, .menu .deserts .menu-btn.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.menu .starters .menu-btn.delay-2, .menu .meals .menu-btn.delay-2, .menu .deserts .menu-btn.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.menu .starters .menu-btn.delay-3, .menu .meals .menu-btn.delay-3, .menu .deserts .menu-btn.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.menu .starters .menu-btn.delay-4, .menu .meals .menu-btn.delay-4, .menu .deserts .menu-btn.delay-4 {
+  animation-delay: 0.4s;
+}
+
+.menu .starters .menu-btn.delay-5, .menu .meals .menu-btn.delay-5, .menu .deserts .menu-btn.delay-5 {
+  animation-delay: 0.5s;
+}
+
+.menu .starters .menu-btn.delay-6, .menu .meals .menu-btn.delay-6, .menu .deserts .menu-btn.delay-6 {
+  animation-delay: 0.6s;
+}
+
+.menu .starters .menu-btn.delay-7, .menu .meals .menu-btn.delay-7, .menu .deserts .menu-btn.delay-7 {
+  animation-delay: 0.7s;
+}
+
+.menu .starters .menu-btn.delay-8, .menu .meals .menu-btn.delay-8, .menu .deserts .menu-btn.delay-8 {
+  animation-delay: 0.8s;
+}
+
+.menu .starters .menu-btn.delay-9, .menu .meals .menu-btn.delay-9, .menu .deserts .menu-btn.delay-9 {
+  animation-delay: 0.9s;
+}
+
+.menu .starters .menu-btn.delay-10, .menu .meals .menu-btn.delay-10, .menu .deserts .menu-btn.delay-10 {
+  animation-delay: 1s;
 }
 
 .menu .starters .ellipsis, .menu .meals .ellipsis, .menu .deserts .ellipsis {
