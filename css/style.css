@@ -165,7 +165,7 @@ header .discover .discover__btn:hover {
   align-items: center;
 }
 
-@media all and (min-width: 851px) {
+@media all and (min-width: 480px) and (max-width: 850px) {
   .howitworks .howitworks-responsive {
     flex-direction: row;
     justify-content: center;
@@ -192,6 +192,13 @@ header .discover .discover__btn:hover {
   -moz-box-shadow: 0px 3px 5px 1px #cfc7cf;
 }
 
+@media all and (min-width: 480px) and (max-width: 850px) {
+  .howitworks .howitworks__btn {
+    width: 30%;
+    margin: 1em;
+  }
+}
+
 @media all and (min-width: 851px) {
   .howitworks .howitworks__btn {
     width: 30%;
@@ -205,13 +212,6 @@ header .discover .discover__btn:hover {
 
 .howitworks .howitworks__btn:hover i {
   color: #9356DC;
-}
-
-@media all and (min-width: 851px) {
-  .howitworks .howitworks__btn {
-    width: 30%;
-    margin: 1em;
-  }
 }
 
 .howitworks .howitworks__btn i {
@@ -265,12 +265,25 @@ header .discover .discover__btn:hover {
   }
 }
 
+@media all and (min-width: 480px) and (max-width: 850px) {
+  .restaurants .restaurants-responsive {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .restaurants .card {
   display: flex;
   text-decoration: none;
   color: inherit;
   margin-top: 1.5em;
   padding-bottom: 1.5em;
+}
+
+@media all and (min-width: 480px) and (max-width: 850px) {
+  .restaurants .card {
+    width: 50%;
+  }
 }
 
 @media all and (min-width: 851px) {
@@ -306,6 +319,12 @@ header .discover .discover__btn:hover {
   border-top-right-radius: 0.9375em;
   width: 100%;
   object-fit: cover;
+}
+
+@media all and (min-width: 851px) {
+  .restaurants .card figure img {
+    height: 13em;
+  }
 }
 
 .restaurants .card figure figcaption {
