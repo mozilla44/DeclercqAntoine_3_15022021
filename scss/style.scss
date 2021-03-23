@@ -245,6 +245,9 @@ header {
                 border-top-right-radius: 0.9375em;
                 width: 100%;
                 object-fit: cover;
+                @include desktop {
+                    height: 13em;
+                }
             }
             figcaption {
                 line-height: 1.5em;

@@ -321,6 +321,12 @@ header .discover .discover__btn:hover {
   object-fit: cover;
 }
 
+@media all and (min-width: 851px) {
+  .restaurants .card figure img {
+    height: 13em;
+  }
+}
+
 .restaurants .card figure figcaption {
   line-height: 1.5em;
   display: flex;
