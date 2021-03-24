@@ -123,6 +123,9 @@ header {
             &:hover .price {
                 padding-right: 2em;
             }
+            &:hover .checkmark {
+                transform: rotate(360deg);
+            }
         }
         .ellipsis {
             flex: 1;
@@ -179,6 +182,7 @@ header {
                 border-radius: 0.9375em;
                 .checkmark {
                     color: $color-third;
+                    transition: all 0.5s ease;
                 }
             }
         }
