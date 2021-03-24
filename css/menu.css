@@ -184,6 +184,7 @@ header .header-background {
   -webkit-box-shadow: 0px 3px 5px 1px #cfc7cf;
   -moz-box-shadow: 0px 3px 5px 1px #cfc7cf;
   cursor: pointer;
+  overflow: hidden;
   opacity: 0;
   -webkit-transform-origin: top;
           transform-origin: top;
@@ -243,6 +244,14 @@ header .header-background {
           animation-delay: 1s;
 }
 
+.menu .starters .menu-btn:hover .confirm, .menu .meals .menu-btn:hover .confirm, .menu .deserts .menu-btn:hover .confirm {
+  margin: -1em;
+}
+
+.menu .starters .menu-btn:hover .price, .menu .meals .menu-btn:hover .price, .menu .deserts .menu-btn:hover .price {
+  padding-right: 2em;
+}
+
 .menu .starters .ellipsis, .menu .meals .ellipsis, .menu .deserts .ellipsis {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -289,7 +298,8 @@ header .header-background {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -301,7 +311,7 @@ header .header-background {
   margin-left: 0.5em;
   margin-top: -1em;
   margin-bottom: -1em;
-  margin-right: -1em;
+  margin-right: -5em;
   border-bottom-right-radius: 0.9375em;
   border-top-right-radius: 0.9375em;
 }
