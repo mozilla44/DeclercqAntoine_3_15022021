@@ -345,6 +345,8 @@ header .header-background {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .menu .starters .confirm, .menu .meals .confirm, .menu .deserts .confirm {
