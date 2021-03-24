@@ -1,6 +1,21 @@
+@-webkit-keyframes bounce {
+  100% {
+    -webkit-transform: translateY(-4.375em);
+            transform: translateY(-4.375em);
+  }
+}
+
 @keyframes bounce {
   100% {
-    transform: translateY(-4.375em);
+    -webkit-transform: translateY(-4.375em);
+            transform: translateY(-4.375em);
+  }
+}
+
+@-webkit-keyframes hideit {
+  100% {
+    opacity: 0;
+    z-index: -20;
   }
 }
 
@@ -11,10 +26,22 @@
   }
 }
 
+@-webkit-keyframes pop-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0.3em);
+            transform: translateY(0.3em);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes pop-in {
   0% {
     opacity: 0;
-    transform: translateY(0.3em);
+    -webkit-transform: translateY(0.3em);
+            transform: translateY(0.3em);
   }
   100% {
     opacity: 1;
@@ -28,18 +55,27 @@ body {
 
 /* LOADER*/
 #loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 100%;
   position: fixed;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 100;
   background-color: white;
-  animation: hideit;
-  animation-delay: 2.5s;
-  animation-fill-mode: forwards;
+  -webkit-animation: hideit;
+          animation: hideit;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #loader .bouncing-ball {
@@ -51,23 +87,30 @@ body {
 
 #loader .bouncing-ball.ball-1 {
   background-color: #9356DC;
-  animation: bounce .5s ease .0s infinite alternate;
+  -webkit-animation: bounce .5s ease .0s infinite alternate;
+          animation: bounce .5s ease .0s infinite alternate;
 }
 
 #loader .bouncing-ball.ball-2 {
   background-color: #FF79DA;
-  animation: bounce .5s ease .10s infinite alternate;
+  -webkit-animation: bounce .5s ease .10s infinite alternate;
+          animation: bounce .5s ease .10s infinite alternate;
 }
 
 #loader .bouncing-ball.ball-3 {
   background-color: #99E2D0;
-  animation: bounce .5s ease .15s infinite alternate;
+  -webkit-animation: bounce .5s ease .15s infinite alternate;
+          animation: bounce .5s ease .15s infinite alternate;
 }
 
 /*HEADER*/
 header .logo-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .header__logo {
@@ -77,9 +120,13 @@ header .header__logo {
 }
 
 header .header__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #EAEAEA;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-right: 1.5em;
   box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.13) inset;
   -webkit-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.13) inset;
@@ -87,17 +134,29 @@ header .header__location {
 }
 
 header .pin-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
   margin-right: 1em;
 }
 
 header .discover {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
   background-color: #F6F6F6;
 }
@@ -126,7 +185,9 @@ header .discover .discover__btn {
   font-weight: 600;
   color: #FFFFFF;
   border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(#e86edb), color-stop(#cf64dc), color-stop(#b35cdc), to(#9356dc));
   background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  -webkit-transition: all 200ms;
   transition: all 200ms;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
@@ -142,13 +203,21 @@ header .discover .discover__btn:hover {
 
 /*FONCTIONNEMENT*/
 .howitworks {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .howitworks h2 {
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   margin-left: 0.5em;
 }
 
@@ -160,22 +229,39 @@ header .discover .discover__btn:hover {
 
 .howitworks .howitworks-responsive {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media all and (min-width: 480px) and (max-width: 850px) {
   .howitworks .howitworks-responsive {
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media all and (min-width: 851px) {
   .howitworks .howitworks-responsive {
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -183,8 +269,12 @@ header .discover .discover__btn:hover {
   width: 90%;
   background-color: #F6F6F6;
   border-radius: 0.9375em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0.5em 0;
   height: 4.5em;
   box-shadow: 0px 3px 5px 1px #cfc7cf;
@@ -219,9 +309,14 @@ header .discover .discover__btn:hover {
   color: grey;
   height: 1em;
   width: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   margin-left: 5%;
   margin-right: 10%;
 }
@@ -231,9 +326,15 @@ header .discover .discover__btn:hover {
   border-radius: 0.9375em;
   height: 1.5em;
   width: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: -0.7em;
 }
 
@@ -260,19 +361,27 @@ header .discover .discover__btn:hover {
 
 @media all and (min-width: 851px) {
   .restaurants .restaurants-responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 @media all and (min-width: 480px) and (max-width: 850px) {
   .restaurants .restaurants-responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 .restaurants .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-decoration: none;
   color: inherit;
@@ -297,8 +406,13 @@ header .discover .discover__btn:hover {
   border-radius: 0.9375em;
   width: 90%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   box-shadow: 0px 3px 5px 1px #cfc7cf;
   -webkit-box-shadow: 0px 3px 5px 1px #cfc7cf;
@@ -314,7 +428,8 @@ header .discover .discover__btn:hover {
 .restaurants .card figure img {
   height: 9em;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 0.9375em;
   border-top-right-radius: 0.9375em;
   width: 100%;
@@ -329,6 +444,8 @@ header .discover .discover__btn:hover {
 
 .restaurants .card figure figcaption {
   line-height: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -337,13 +454,19 @@ header .discover .discover__btn:hover {
 }
 
 .restaurants .card figure figcaption .figcaption__text {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 0.8em;
 }
 
 .restaurants .card figure figcaption .heart-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 1em;
   font-size: 1.5em;
 }
@@ -354,19 +477,27 @@ header .discover .discover__btn:hover {
 }
 
 .restaurants .card figure figcaption .fa-heart:hover {
+  -webkit-transition: .3s ease;
   transition: .3s ease;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(#e86edb), color-stop(#cf64dc), color-stop(#b35cdc), to(#9356dc));
   background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 }
 
 .restaurants .card figure .new {
   background-color: #99E2D0;
   color: #018766;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 5em;
   height: 2em;
   border-radius: 0.1875em;
@@ -392,8 +523,12 @@ header .discover .discover__btn:hover {
 .footer a {
   text-decoration: none;
   color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer p {

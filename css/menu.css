@@ -1,6 +1,21 @@
+@-webkit-keyframes bounce {
+  100% {
+    -webkit-transform: translateY(-4.375em);
+            transform: translateY(-4.375em);
+  }
+}
+
 @keyframes bounce {
   100% {
-    transform: translateY(-4.375em);
+    -webkit-transform: translateY(-4.375em);
+            transform: translateY(-4.375em);
+  }
+}
+
+@-webkit-keyframes hideit {
+  100% {
+    opacity: 0;
+    z-index: -20;
   }
 }
 
@@ -11,10 +26,22 @@
   }
 }
 
+@-webkit-keyframes pop-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0.3em);
+            transform: translateY(0.3em);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes pop-in {
   0% {
     opacity: 0;
-    transform: translateY(0.3em);
+    -webkit-transform: translateY(0.3em);
+            transform: translateY(0.3em);
   }
   100% {
     opacity: 1;
@@ -28,9 +55,13 @@ body {
 
 /* HEADER */
 header .logo-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 3em;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 1em;
 }
 
@@ -40,16 +71,21 @@ header .logo-banner .link-arrow {
 }
 
 header .logo-banner .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 1.5em;
 }
 
 header .header-background {
   width: 100%;
   height: 15em;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #container {
@@ -68,8 +104,12 @@ header .header-background {
 
 @media all and (min-width: 851px) {
   .menu .menu-responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -80,6 +120,8 @@ header .header-background {
 }
 
 .menu .restaurant-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -92,18 +134,24 @@ header .header-background {
 }
 
 .menu .restaurant-name i {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 2em;
   font-size: 1.25em;
   cursor: pointer;
 }
 
 .menu .restaurant-name .fa-heart:hover {
+  -webkit-transition: .3s ease;
   transition: .3s ease;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(#e86edb), color-stop(#cf64dc), color-stop(#b35cdc), to(#9356dc));
   background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 }
 
@@ -129,59 +177,76 @@ header .header-background {
   border-radius: 0.9375em;
   padding: 1em;
   margin: 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   box-shadow: 0px 3px 5px 1px #cfc7cf;
   -webkit-box-shadow: 0px 3px 5px 1px #cfc7cf;
   -moz-box-shadow: 0px 3px 5px 1px #cfc7cf;
   cursor: pointer;
   opacity: 0;
-  transform-origin: top;
-  animation: pop-in 1.5s ease;
-  animation-fill-mode: forwards;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: pop-in 1.5s ease;
+          animation: pop-in 1.5s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .menu .starters .menu-btn.delay-1, .menu .meals .menu-btn.delay-1, .menu .deserts .menu-btn.delay-1 {
-  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .menu .starters .menu-btn.delay-2, .menu .meals .menu-btn.delay-2, .menu .deserts .menu-btn.delay-2 {
-  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .menu .starters .menu-btn.delay-3, .menu .meals .menu-btn.delay-3, .menu .deserts .menu-btn.delay-3 {
-  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 .menu .starters .menu-btn.delay-4, .menu .meals .menu-btn.delay-4, .menu .deserts .menu-btn.delay-4 {
-  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .menu .starters .menu-btn.delay-5, .menu .meals .menu-btn.delay-5, .menu .deserts .menu-btn.delay-5 {
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .menu .starters .menu-btn.delay-6, .menu .meals .menu-btn.delay-6, .menu .deserts .menu-btn.delay-6 {
-  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .menu .starters .menu-btn.delay-7, .menu .meals .menu-btn.delay-7, .menu .deserts .menu-btn.delay-7 {
-  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 
 .menu .starters .menu-btn.delay-8, .menu .meals .menu-btn.delay-8, .menu .deserts .menu-btn.delay-8 {
-  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 .menu .starters .menu-btn.delay-9, .menu .meals .menu-btn.delay-9, .menu .deserts .menu-btn.delay-9 {
-  animation-delay: 0.9s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 
 .menu .starters .menu-btn.delay-10, .menu .meals .menu-btn.delay-10, .menu .deserts .menu-btn.delay-10 {
-  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .menu .starters .ellipsis, .menu .meals .ellipsis, .menu .deserts .ellipsis {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -209,16 +274,28 @@ header .header-background {
   font-size: 0.8em;
   font-weight: 500;
   padding-left: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .menu .starters .confirm, .menu .meals .confirm, .menu .deserts .confirm {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: none;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 4em;
   background-color: #99E2D0;
   margin-left: 0.5em;
@@ -233,9 +310,15 @@ header .header-background {
   background-color: #FFFFFF;
   height: 1.5em;
   width: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 0.9375em;
 }
 
@@ -244,9 +327,14 @@ header .header-background {
 }
 
 .menu .order {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   height: 8em;
 }
 
@@ -260,11 +348,13 @@ header .header-background {
   font-weight: 600;
   color: #FFFFFF;
   border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(#e86edb), color-stop(#cf64dc), color-stop(#b35cdc), to(#9356dc));
   background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   margin: auto;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
+  -webkit-transition: all 200ms;
   transition: all 200ms;
 }
 
@@ -293,8 +383,12 @@ header .header-background {
 .footer a {
   text-decoration: none;
   color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer p {
