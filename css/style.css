@@ -48,6 +48,24 @@
   }
 }
 
+@-webkit-keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -189,6 +207,7 @@ header .discover .discover__btn {
   background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   -webkit-transition: all 200ms;
   transition: all 200ms;
+  cursor: pointer;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55);
@@ -476,14 +495,32 @@ header .discover .discover__btn:hover {
   font-size: 1em;
 }
 
-.restaurants .card figure figcaption .fa-heart:hover {
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+.restaurants .card figure figcaption .full {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(#e86edb), color-stop(#cf64dc), color-stop(#b35cdc), to(#9356dc));
+  background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 900;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(#e86edb), color-stop(#cf64dc), color-stop(#b35cdc), to(#9356dc));
-  background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  position: absolute;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+.restaurants .card figure figcaption .empty {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
+}
+
+.restaurants .card figure figcaption .heart-icon:hover .full {
+  opacity: 1;
+}
+
+.restaurants .card figure figcaption .heart-icon:hover .empty {
+  opacity: 0;
 }
 
 .restaurants .card figure .new {
