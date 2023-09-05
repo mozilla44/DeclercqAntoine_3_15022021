@@ -1,4 +1,4 @@
-# DeclercqAntoine_3_15022021
+# OhMyFood
 Project to learn the sass preprocessor and css animations
 
 
